@@ -13,10 +13,19 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="pt-20 px-4 pb-5">
+    <section className="pt-20 px-4 pb-15">
       <div className="max-w-7xl mx-auto px-10 md:px-14">
+
         {/* Header */}
-        <h1 className="text-4xl font-bold text-center mb-10">How It Works</h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-center mb-10"
+        >
+          How It Works
+        </motion.h1>
 
         {/* Timeline wrapper */}
         <div className="relative">
