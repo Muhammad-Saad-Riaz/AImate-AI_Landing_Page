@@ -29,7 +29,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
     <header className="sticky top-0 z-50">
-      <nav className="w-full bg-primary-foreground ">
+      <nav className="w-full bg-accent ">
         <div className="max-w-7xl mx-auto flex justify-between items-center p-3 pl-4 pr-4">
           {/* Hamburger menu button for mobile */}
           <Button
