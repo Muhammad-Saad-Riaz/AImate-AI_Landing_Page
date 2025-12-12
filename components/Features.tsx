@@ -18,7 +18,7 @@ const item = {
 
 const Features = () => {
   return (
-    <section className="py-20 px-4">
+    <section className="pt-20 px-4">
       <div className="max-w-7xl mx-auto px-10 md:px-14">
         {/* Header */}
         <motion.h1

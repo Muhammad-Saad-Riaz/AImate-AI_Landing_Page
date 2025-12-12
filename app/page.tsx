@@ -1,6 +1,7 @@
 
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import HowItWorks from "@/components/HowItWorks";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <Features/>
+      <HowItWorks/>
     </div>
   );
 }
