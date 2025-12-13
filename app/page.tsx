@@ -1,4 +1,3 @@
-
 import CTA from "@/components/CTA";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -12,14 +11,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      <Navbar/>
-      <Hero/>
-      <Features/>
-      <HowItWorks/>
-      <Testimonials/>
-      <Pricing/>
-      <CTA/>
-      <Footer/>
+      <main>
+        <Navbar />
+        <Hero />
+        <Features />
+        <HowItWorks />
+        <Testimonials />
+        <Pricing />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 }
