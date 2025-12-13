@@ -5,6 +5,9 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/ModeToggle";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
+import { useEffect } from "react";
 
 const components: { title: string; href: string }[] = [
   {
@@ -27,9 +30,25 @@ const components: { title: string; href: string }[] = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  // to remove hydration tree error
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="h-16 w-full bg-background border-b" />;
+  }
+
   return (
     <header className="sticky top-0 z-50">
-      <nav className="w-full bg-accent ">
+      <motion.nav
+        initial={{ opacity: 0, y: -8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="h-16 w-full border-b bg-accent"
+      >
         <div className="max-w-7xl mx-auto flex justify-between items-center p-3 pl-4 pr-4">
           {/* Hamburger menu button for mobile */}
           <Button
@@ -70,7 +89,7 @@ const Navbar = () => {
             <Button variant={"destructive"}>Login</Button>
           </span>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Menu */}
       <nav
