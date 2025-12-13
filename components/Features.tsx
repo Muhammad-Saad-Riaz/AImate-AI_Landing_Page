@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { ChartNoAxesCombined, Link, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 const container = {
   hidden: { opacity: 0 },
@@ -41,11 +42,15 @@ const Features = () => {
         >
           {/* Card 1 */}
           <motion.div variants={item} whileHover={{ scale: 1.04 }}>
-            <Card>
-              <div className="flex justify-center items-center bg-accent h-60  mx-6 rounded-lg">
-                <Sparkles size={60} />
-              </div>
-              <CardHeader>
+            <Card className="flex flex-col justify-center items-center pt-0 lg:pt-6">
+                <Image
+                  className="flex justify-center items-center bg-accent rounded-lg" 
+                  alt="Smart Workflow Engine"
+                  src="/assets/Smart Workflow.png"
+                  width={320}
+                  height={320}
+                />
+              <CardHeader className="w-full">
                 <CardTitle>Smart Workflow Engine</CardTitle>
                 <CardDescription>
                   Automate repetitive tasks and complex business processes using
@@ -58,11 +63,15 @@ const Features = () => {
 
           {/* Card 2 */}
           <motion.div variants={item} whileHover={{ scale: 1.04 }}>
-            <Card>
-              <div className="flex justify-center items-center bg-accent h-60  mx-6 rounded-lg">
-                <ChartNoAxesCombined size={60} />
-              </div>
-              <CardHeader>
+            <Card className="flex flex-col justify-center items-center pt-0 lg:pt-6">
+              <Image
+                  className="flex justify-center items-center bg-accent rounded-lg " 
+                  alt="AI Insights"
+                  src="/assets/AI Insights.png"
+                  width={320}
+                  height={320}
+                />
+              <CardHeader className="w-full">
                 <CardTitle>Actionable AI Insights</CardTitle>
                 <CardDescription>
                   Analyze massive datasets instantly to uncover hidden trends,
@@ -75,11 +84,15 @@ const Features = () => {
 
           {/* Card 3 */}
           <motion.div variants={item} whileHover={{ scale: 1.04 }}>
-            <Card>
-              <div className="flex justify-center items-center bg-accent h-60  mx-6 rounded-lg">
-                <Link size={60} />
-              </div>
-              <CardHeader>
+            <Card className="flex flex-col justify-center items-center pt-0 lg:pt-6">
+              <Image
+                  className="flex justify-center items-center bg-accent rounded-lg" 
+                  alt="Smart Workflow Engine"
+                  src="/assets/Smart Workflow.png"
+                  width={320}
+                  height={320}
+                />
+              <CardHeader className="w-full">
                 <CardTitle>Connect Everything</CardTitle>
                 <CardDescription>
                   Deploy AImate across your tech stack instantly. Connect with
