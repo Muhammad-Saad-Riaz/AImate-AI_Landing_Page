@@ -19,7 +19,7 @@ const item = {
 
 const Features = () => {
   return (
-    <section className="pt-20 px-4">
+    <section id="features" className="pt-20 px-4">
       <div className="max-w-7xl mx-auto px-10 md:px-14">
         {/* Header */}
         <motion.h1

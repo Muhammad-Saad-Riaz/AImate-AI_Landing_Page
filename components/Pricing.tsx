@@ -33,7 +33,7 @@ const cardVariants = {
 
 const Pricing = () => {
   return (
-    <section className="pt-20 px-4 pb-5">
+    <section id="pricing" className="pt-20 px-4 pb-5">
       <div className="max-w-7xl mx-auto px-10 md:px-14">
 
         {/* Header */}

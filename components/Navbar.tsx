@@ -13,15 +13,15 @@ const components: { title: string; href: string }[] = [
   },
   {
     title: "Features",
-    href: "/features",
+    href: "#features",
   },
   {
     title: "Pricing",
-    href: "/pricing",
+    href: "#pricing",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
