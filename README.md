@@ -29,7 +29,9 @@ npm install
 npm run dev  
 
 ## 🌐 Live Demo
-(Add your Vercel URL)
+```
+https://aimate-ai.vercel.app/
+```
 
 ## 🧑‍💻 Author
 Muhammad Saad Riaz
